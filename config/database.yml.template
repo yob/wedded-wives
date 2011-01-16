@@ -1,0 +1,23 @@
+development:
+  adapter: mysql2
+  host: 127.0.0.1
+  database: wedded_dev
+  username:
+  password:
+  encoding: utf8
+
+test:
+  adapter: mysql2
+  host: 127.0.0.1
+  database: wedded_test
+  username:
+  password:
+  encoding: utf8
+
+production:
+  adapter: mysql2
+  host: 127.0.0.1
+  database: wedded_production
+  username:
+  password:
+  encoding: utf8
