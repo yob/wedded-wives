@@ -10,7 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110116041058) do
+ActiveRecord::Schema.define(:version => 20110116123352) do
+
+  create_table "gifts", :force => true do |t|
+    t.string   "name",          :limit => 128, :null => false
+    t.string   "email",         :limit => 128, :null => false
+    t.integer  "suggestion_id",                :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "gifts", ["suggestion_id"], :name => "index_gifts_on_suggestion_id"
 
   create_table "suggestions", :force => true do |t|
     t.string   "description",                               :null => false
