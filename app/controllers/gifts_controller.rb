@@ -6,6 +6,12 @@ class GiftsController < ApplicationController
   def new
     @sug  = Suggestion.find(params[:suggestion_id])
     @gift = @sug.gifts.build
+
+    if @sug.finished?
+      render :template => "gifts/finished.html.erb"
+    else
+      render :action => :new
+    end
   end
 
   def create
