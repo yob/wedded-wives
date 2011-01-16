@@ -3,7 +3,7 @@
     <% @suggestions.each do |sug|%>
     <tr>
       <td><%= sug.description%></td>
-      <td><%= sug.count %></td>
+      <td><%= sug.count %>x</td>
       <td><%= number_to_currency(sug.value) %></td>
     </tr>
     <% end %>
