@@ -27,7 +27,12 @@ var Wedded = {
       return false;
     });
   },
+
+  onExit: function() {
+    window.location.reload();
+  },
 }
 
 $(Wedded.init_facebox_links);
 $(document).bind('reveal.facebox', Wedded.ajaxify_form);
+$(document).bind('afterClose.facebox', Wedded.onExit);
