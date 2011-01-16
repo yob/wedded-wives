@@ -18,6 +18,7 @@
       </div>
     </div>
     <%= javascripts %>
+    <% if Rails.env == "production" %>
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
@@ -32,5 +33,6 @@
       })();
 
     </script>
+  <% end %>
   </body>
 </html>
