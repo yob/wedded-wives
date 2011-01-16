@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   private
 
   def init_includes_collections
-    @stylesheets = ["formtastic", "style"]
-    @javascripts = [:jquery, :rails, :application ]
+    @stylesheets = ["formtastic", "style", "facebox"]
+    @javascripts = [:jquery, :rails, :facebox, :application ]
   end
 end

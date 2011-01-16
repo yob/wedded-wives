@@ -5,6 +5,7 @@
       <td><%= sug.description%></td>
       <td><%= sug.count %>x</td>
       <td><%= number_to_currency(sug.value) %></td>
+      <td><%= link_to "Pick This", new_suggestion_gift_path(sug), :class => "facebox" %></td>
     </tr>
     <% end %>
   </tbody>

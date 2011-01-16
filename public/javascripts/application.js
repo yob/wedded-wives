@@ -1,2 +1,7 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+var Wedded = {
+  init_facebox_links: function() {
+    $('a.facebox').facebox();
+  }
+}
+
+$(Wedded.init_facebox_links);
