@@ -1,0 +1,11 @@
+<%= semantic_form_for @gift, :url => suggestion_gifts_path(@sug) do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :name, :required => false %>
+    <%= f.input :email, :required => false %>
+  <% end %>
+
+  <%= f.buttons do %>
+    <%= f.commit_button "Select Gift" %>
+  <% end %>
+<% end %>
+
