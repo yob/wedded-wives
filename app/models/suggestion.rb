@@ -8,7 +8,7 @@ class Suggestion < ActiveRecord::Base
   validates_numericality_of :value, :greater_than_or_equal_to => 0, :less_than_or_equal_to => 50000
 
   def remaining
-    num = self.count - self.gifts.size
+    num = self.count - self.gifts.select(&:persisted?).size
     num <= 0 ? 0 : num
   end
 
