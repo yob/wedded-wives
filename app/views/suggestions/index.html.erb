@@ -1,0 +1,11 @@
+<table>
+  <tbody>
+    <% @suggestions.each do |sug|%>
+    <tr>
+      <td><%= sug.description%></td>
+      <td><%= sug.count %></td>
+      <td><%= number_to_currency(sug.value) %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
