@@ -6,4 +6,13 @@ class Suggestion < ActiveRecord::Base
   validates_length_of :description, :maximum => 255
   validates_numericality_of :count, :greater_than_or_equal_to => 0, :less_than_or_equal_to => 50000
   validates_numericality_of :value, :greater_than_or_equal_to => 0, :less_than_or_equal_to => 50000
+
+  def remaining
+    num = self.count - self.gifts.size
+    num <= 0 ? 0 : num
+  end
+
+  def finished?
+    remaining == 0
+  end
 end
