@@ -1,5 +1,7 @@
 # encoding: utf-8
 
+require "wedded/form_builder"
+
 # --------------------------------------------------------------------------------------------------
 # Please note: If you're subclassing Formtastic::SemanticFormBuilder in a Rails 3 project, 
 # Formtastic uses class_attribute for these configuration attributes instead of the deprecated 
@@ -77,4 +79,4 @@
 
 # You can add custom inputs or override parts of Formtastic by subclassing SemanticFormBuilder and
 # specifying that class here.  Defaults to SemanticFormBuilder.
-# Formtastic::SemanticFormHelper.builder = MyCustomBuilder
+Formtastic::SemanticFormHelper.builder = Wedded::FormBuilder

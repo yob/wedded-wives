@@ -1,5 +1,11 @@
+<p>To select this gift for Charlie and Jess, enter your details below.</p>
+
+<p>Once the form is completed, you will be emailed some bank details. Feel free to transfer your gift or bring it along on the day.</p>
+
 <%= semantic_form_for @gift, :url => suggestion_gifts_path(@sug) do |f| %>
   <%= f.inputs do %>
+    <%= f.manual_text @gift.suggestion.description, :label => "Gift"%>
+    <%= f.manual_text number_to_currency(@gift.suggestion.value), :label => "Value"%>
     <%= f.input :name, :required => false %>
     <%= f.input :email, :required => false %>
   <% end %>
@@ -8,4 +14,3 @@
     <%= f.commit_button "Select Gift" %>
   <% end %>
 <% end %>
-
