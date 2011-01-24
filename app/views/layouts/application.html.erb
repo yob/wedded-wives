@@ -7,15 +7,18 @@
     <%= csrf_meta_tag %>
   </head>
   <body>
-    <div id="header">
-      <div id="logo">
-        <h1>Unlawfully Wedded Wives</h1>
+    <div id="gradient">
+      <div id="header">
+      </div>
+      <div id="container">
+        <div id="content">
+          <%= yield %>
+        </div>
       </div>
     </div>
-    <div id="container">
-      <div id="content">
-        <%= yield %>
-      </div>
+    <div id="footer">
+      <img src="/images/footer.png" alt="footer">
+      <p>Send us an <a href="mailto:unlawfullyweddedwives@gmail.com">email</a> if you like!</p>
     </div>
     <%= javascripts %>
     <% if Rails.env == "production" %>

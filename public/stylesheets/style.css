@@ -1,4 +1,58 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: #d2d1d0;
   font-family: tahoma,Geneva,sans-serif;
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* gradient trick from http://www.puremango.co.uk/2010/04/css-gradient-background */
+#gradient {
+  /* fallback (Opera) */
+  background: #f6d1b7;
+  /* Mozilla: */
+  background: -moz-linear-gradient(top, #f6d1b7, #f2e5d5);
+  /* Chrome, Safari:*/
+  background: -webkit-gradient(linear,
+              left top, left bottom, from(#f6d1b7), to(#f2e5d5));
+  /* MSIE */
+  filter: progid:DXImageTransform.Microsoft.Gradient(
+              StartColorStr='#f6d1b7', EndColorStr='#f2e5d5', GradientType=0);
+  padding-bottom: 40px;
+}
+
+#header {
+  background-image: url(/images/header.png);
+  height: 427px;
+  width: 959px;
+  margin: 0 auto;
+}
+
+#container {
+  width: 959px;
+  margin: 0 auto;
+}
+
+#footer {
+  width: 959px;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#footer img {
+  position: absolute;
+  top: -18px;
+  left: 0;
+}
+
+#footer p {
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: center;
 }
