@@ -30,6 +30,21 @@ body {
   height: 427px;
   width: 959px;
   margin: 0 auto;
+  position: relative;
+}
+
+#header h1 {
+  width: 395px;
+  height: 65px;
+  overflow: hidden;
+  position: absolute;
+  top: 145px;
+  left: 480px;
+  text-align: center;
+  color: #4e2124;
+  font-weight: normal;
+  text-transform:uppercase;
+  font-size: 28px;
 }
 
 #container {
