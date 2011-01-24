@@ -101,3 +101,14 @@ body {
   padding-top: 20px;
   text-align: center;
 }
+
+/* home page */
+#welcome  { position: relative; }
+#welcome #signature {
+  font-family: 'Reenie Beanie', arial, serif;
+  color: #4e2124;
+  font-size: 34px;
+}
+#welcome p { width: 480px; padding-left: 10px; }
+#welcome #photo { position: absolute; top: 0; left: 500px;}
+#welcome #cartoons { margin-left: 300px;}

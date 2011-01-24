@@ -5,5 +5,8 @@ Weddedwives::Application.routes.draw do
     resources :gifts
   end
 
-  root :to => "suggestions#index"
+  match '/details' => 'pages#details', :as => :details
+  match '/invite'  => 'pages#invite',  :as => :invite
+
+  root :to => "pages#home"
 end
