@@ -23,6 +23,8 @@ body {
   filter: progid:DXImageTransform.Microsoft.Gradient(
               StartColorStr='#f6d1b7', EndColorStr='#f2e5d5', GradientType=0);
   padding-bottom: 40px;
+  width: 959px;
+  margin: 0 auto;
 }
 
 #header {
