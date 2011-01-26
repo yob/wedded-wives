@@ -129,6 +129,12 @@ body {
   color: #4e2124;
   font-size: 34px;
 }
-#welcome p { width: 480px; padding-left: 10px; font-size: 14px;}
+#welcome p { width: 480px; padding-left: 15px; font-size: 14px;}
 #welcome #photo { position: absolute; top: 0; left: 500px;}
 #welcome #cartoons { margin-left: 300px;}
+
+/* invite page */
+#invite  { position: relative; }
+#invite p { padding-left: 15px; font-size: 14px;}
+#invite a img { border: 0;}
+#invite #download {width: 960px; text-align: center; position: absolute; top: 550px;}
