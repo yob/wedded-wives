@@ -10,6 +10,7 @@ var Wedded = {
     $("#facebox form").submit(function(f) {
       var form = this;
       var form_data = $(form).serialize();
+      $.facebox.loading();
 
       jQuery.ajax({
         data: form_data,
