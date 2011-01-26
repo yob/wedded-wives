@@ -5,7 +5,8 @@ html {
 }
 
 body {
-  font-family: 'Merriweather', arial, serif;
+  color: #4e2124;
+  font-family: serif;
   padding: 0;
   margin: 0 auto;
 }
@@ -63,6 +64,7 @@ body {
   font-weight: normal;
   text-transform:uppercase;
   font-size: 32px;
+  font-family: 'Merriweather', arial, serif;
 }
 
 #header ul {
@@ -81,6 +83,7 @@ body {
   border: none;
   text-transform:lowercase;
   margin: 0 40px;
+  font-family: 'Merriweather', arial, serif;
 }
 
 #header li:hover {
