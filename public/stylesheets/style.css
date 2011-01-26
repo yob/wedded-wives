@@ -12,6 +12,7 @@ body {
 }
 
 .clearfix { clear: both;}
+a img { border: 0;}
 
 /* gradient trick from http://www.puremango.co.uk/2010/04/css-gradient-background */
 #gradient {
@@ -146,3 +147,10 @@ body {
 #details #leftcol, #details #midcol, #details #rightcol { width: 300px; margin: 0 10px 0 0; float: left;}
 #details h3 { padding: 0; margin: 0; font-size: 14px;}
 #details p { padding: 0; margin: 0 0 30px 0;}
+
+/* gift suggestions page */
+#suggestions { padding: 0 0 0 15px; }
+#suggestions table { padding: 0 0 0 15px; border-collapse: separate; border-spacing: 0px 5px;}
+#suggestions td.description { width: 450px; padding-right: 40px; }
+#suggestions td.value { width: 150px; padding: 0 50px 0 0; text-align: right; }
+#suggestions tr.even td.description, #suggestions tr.even td.value { background-color: #edceb9; }

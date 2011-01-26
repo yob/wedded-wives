@@ -1,17 +1,17 @@
-<table>
-  <tbody>
-    <% @suggestions.each do |sug|%>
-    <tr>
-      <td><%= sug.count %>x</td>
-      <td><%= sug.description%></td>
-      <td><%= sug.remaining %></td>
-      <td><%= number_to_currency(sug.value) %></td>
-      <% if sug.finished?%>
-        <td>&nbsp;</td>
-      <% else %>
-        <td><%= link_to "Pick This", new_suggestion_gift_path(sug), :class => "facebox" %></td>
+<div id="suggestions">
+  <table>
+    <tbody>
+      <% @suggestions.each do |sug|%>
+      <tr class="<%=cycle( 'odd', 'even')%>">
+        <td class="description"><%= sug.description%></td>
+        <td class="value"><%= suggestion_value(sug) %></td>
+        <% if sug.finished?%>
+          <td class="button">&nbsp;</td>
+        <% else %>
+          <td class="button"><%= link_to image_tag("pick_this.png"), new_suggestion_gift_path(sug), :class => "facebox" %></td>
+        <% end %>
+      </tr>
       <% end %>
-    </tr>
-    <% end %>
-  </tbody>
-</table>
+    </tbody>
+  </table>
+</div>
