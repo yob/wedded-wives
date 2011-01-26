@@ -28,20 +28,35 @@ body {
 }
 
 #header {
-  background-image: url(/images/header.png);
-  background-repeat: no-repeat;
   height: 435px;
-  width: 959px;
+  width: 960px;
   margin: 0 auto;
   position: relative;
 }
 
+#header img#left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#header img#right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#header img#curly {
+  position: absolute;
+  left: 360px;
+  top: 41px;
+}
 #header h1 {
   width: 395px;
   height: 75px;
   overflow: hidden;
   position: absolute;
-  top: 145px;
+  top: 135px;
   left: 480px;
   text-align: center;
   color: #4e2124;
@@ -80,12 +95,12 @@ body {
 }
 
 #container {
-  width: 959px;
+  width: 960px;
   margin: 0 auto;
 }
 
 #footer {
-  width: 959px;
+  width: 960px;
   height: 100px;
   margin: 0 auto;
   position: relative;
