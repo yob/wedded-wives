@@ -5,6 +5,7 @@ gem 'rails', '3.0.3'
 gem 'mysql2'
 gem 'capistrano'
 gem 'thin'
+gem 'andand'
 
 gem 'jquery-rails'
 gem 'formtastic'
