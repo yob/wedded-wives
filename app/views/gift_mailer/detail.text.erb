@@ -1,0 +1,22 @@
+Dear <%= @gift.name %>,
+
+Thanks for selecting a gift for our wedding - you're helping to make our
+honeymoon possible.
+
+The gift you selected was '<%= @gift.description %>' with a value of
+<%= number_to_currency(@gift.value)%>.
+
+We will have a gift table at the wedding if you would like to bring it
+along. If you would prefer to transfer your gift directly to our bank
+account, use the following details:
+
+    BSB: XXX-XXX
+    Account: XXXXXXXX
+    Name: Jessica Healy
+
+Don't forget to explore our website for more information on what we
+have planned.
+
+See you on March 19th!
+
+Jess and Charlie

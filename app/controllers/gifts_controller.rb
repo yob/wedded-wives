@@ -20,6 +20,7 @@ class GiftsController < ApplicationController
     @gift.suggestion = @sug
 
     if @gift.save
+      GiftMailer.detail(@gift).deliver
       output = render_to_string(:template => "gifts/thanks.html.erb")
     else
       output = render_to_string(:action => :new)
