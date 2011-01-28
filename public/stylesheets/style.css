@@ -71,11 +71,11 @@ a img { border: 0;}
 }
 
 #header ul {
-  width: 850px;
+  width: 960px;
   overflow: hidden;
   position: absolute;
   top: 340px;
-  left: 60px;
+  padding: 0;
 }
 
 #header li {
@@ -85,11 +85,11 @@ a img { border: 0;}
   text-align: center;
   border: none;
   text-transform:lowercase;
-  margin: 0 40px;
+  margin: 0 65px;
   font-family: 'Merriweather', arial, serif;
 }
 
-#header li:hover {
+#header li.active {
   border-bottom: 13px solid #9b415b;
 }
 

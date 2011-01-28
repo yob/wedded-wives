@@ -16,9 +16,9 @@
         <img src="/images/header-curly.png" id="curly">
         <a href="/"><h1>Jess and Charlie <br>are Getting Married!</h1></a>
         <ul>
-          <li><%= link_to "the list", suggestions_path %></li>
-          <li><%= link_to "some details", details_path %></li>
-          <li><%= link_to "the invite", invite_path %></li>
+          <li class="<%= active_if_current(suggestions_path)%>"><%= link_to "the list", suggestions_path %></li>
+          <li class="<%= active_if_current(details_path)%>"><%= link_to "some details", details_path %></li>
+          <li class="<%= active_if_current(invite_path)%>"><%= link_to "the invite", invite_path %></li>
         </ul>
       </div>
       <div id="container">

@@ -10,4 +10,8 @@ module ApplicationHelper
       stylesheet_link_tag(name)
     }.join.html_safe
   end
+
+  def active_if_current(path)
+    current_page?(path) ? "active" : nil
+  end
 end
